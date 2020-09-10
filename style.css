@@ -1,0 +1,851 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Alata', sans-serif;
+}
+input,button,
+input:active,
+input:focus {
+    outline: none;
+}
+a {
+    display: block;
+    text-decoration: none;
+}
+p {
+    line-height: 20px;
+}
+
+.container {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.container-row {
+    width: 100%;
+    padding-left: 1px;
+    padding-right: 1px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.row {
+    display: flex;
+   
+    flex-wrap: wrap;
+}
+.row1 {
+    display: flex;
+    margin-left: -1px;
+    margin-right: -1px;
+    flex-wrap: wrap;
+}
+
+[class*="col-"] {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.logo {
+    margin: 7px;
+}
+.nav-icon {
+    margin: 1em;
+    width: 40px;
+  }
+  
+  .nav-icon:after, 
+  .nav-icon:before, 
+  .nav-icon div {
+    background-color: #fff;
+    border-radius: 3px;
+    content: '';
+    display: block;
+    height: 5px;
+    margin: 7px 0;
+    transition: all .2s ease-in-out;
+  }
+  .nav-icon:hover:before {
+    transform: translateY(12px) rotate(135deg);
+  }
+  
+  .nav-icon:hover:after {
+    transform: translateY(-12px) rotate(-135deg);
+  }
+  
+  .nav-icon:hover div {
+    transform: scale(0);
+  }
+.menu {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu li a {
+    margin: 19px;
+    padding: 7px;
+    font-size: 15px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}
+
+.menu li:hover {
+    border-bottom: 3px solid #e9696a;
+}
+
+.menu li a:hover {
+    color: #e9696a;
+}
+
+header {
+    height: 680px;
+    width: 100%;
+    background: url(images/Banner.png) no-repeat;
+    background-repeat: no-repeat;
+}
+
+.header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    background-color: rgba(000, 000, 000, 0.7);
+    flex-direction: row;
+    justify-content: space-evenly;
+    top: 20px;
+}
+
+.header-style {
+    display: flex;
+}
+
+.header-style h1 {
+    margin: 220px 0px 20px;
+    font-size: 32px;
+}
+
+.header-style p {
+    margin: 40px 0px;
+    font-size: 14px;
+}
+
+.h1red {
+    color: red;
+}
+
+.header-style button {
+    margin: 20px 0px;
+    border: 1px solid #fac81b;
+    border-left: 3px solid #fac81b;
+    width: 150px;
+    height: 50px;
+    background-color: #f6eee9;
+    font-weight: 600;
+}
+
+.header-style button:hover {
+    color: #fac81b;
+    text-shadow: inset 0 0 6px;
+    border:1px solid black;
+    background-color: black;
+    border-left: 3px solid #fac81b;
+}
+
+main {
+    background-color: #e66768;
+}
+
+.main h1 {
+    text-align: center;
+    color: #fac81b;
+    font-size: 35px;
+    margin: 50px 0px;
+}
+.main h2 {
+    text-align: center;
+    color: white;
+    font-size: 22px;
+    margin: 20px 0px;
+}
+
+.main p {
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    margin: 20px 0px;
+}
+
+.main button {
+    margin: 20px 0px ;
+    border: 1px solid #fac81b;
+    border-left: 3px solid #fac81b;
+    width: 150px;
+    height: 50px;
+    background-color: #e66768;
+    font-weight: 600;
+    color: white;
+}
+.main button:hover {
+    color: #fac81b;
+    text-shadow: inset 0 0 6px;
+    border:1px solid black;
+    background-color: black;
+    border-left: 3px solid #fac81b;
+}
+.check {
+    text-align: center;
+}
+
+.check:hover h2 {
+    color: yellow;
+}
+
+.tel {
+    background-image: url(images/tel.png);
+    background-repeat: no-repeat;
+    width: 168px;
+    height: 168px;
+    margin: 20px auto;
+}
+.tel:hover {
+    background-image: url(images/tel1.png);
+}
+
+.js {
+    background-image: url(images/js.png);
+    background-repeat: no-repeat;
+    width: 168px;
+    height: 168px;
+    margin: 20px auto;
+}
+.js:hover {
+    background-image: url(images/js1.png);
+}
+
+.css {
+    background-image: url(images/css.png);
+    background-repeat: no-repeat;
+    width: 168px;
+    height: 168px;
+    margin: 20px auto;
+}
+.css:hover {
+    background-image: url(images/css1.png);
+}
+
+.star {
+    background-image: url(images/star.png);
+    background-repeat: no-repeat;
+    width: 168px;
+    height: 168px;
+    margin: 20px auto;
+}
+.star:hover {
+    background-image: url(images/star1.png);
+}
+
+.our-latest img {
+    text-align: center;
+    width: 381px;
+    height: 248px;
+    padding: 0; 
+    margin: 0;
+    display: inline-block;
+    border: none;  
+}
+/* *********************************1************************************ */
+
+.our-latest h1 {
+    color: #fac81b;
+    font-size: 35px;
+    text-align: center;
+    margin: 60px;
+}
+.works{
+    display: contents;
+}
+.table1 {
+    width: 379px;
+    height: 248px;
+    background-image: url(images/1.png);
+}
+.table1 h1 {
+    margin: 95px 140px 20px 9px;
+    color: white;
+    font-size: 22px;
+    visibility: hidden;
+}
+.table1 p {
+    color: white;
+    font-size: 15px;
+    visibility: hidden;
+}
+.table1 button {
+    margin: 20px 0px;
+    visibility: hidden;
+}
+.table1 button:first-child {
+    width: 39px;
+    height: 36px;
+    background-image: url(images/iconSearch.png) ;
+    background-repeat: no-repeat;
+    background-color: #ca5d6660;
+    outline: none;
+    border: none;
+    float: left;
+    margin-left: 37px;
+}
+.table1 button:last-child {
+    width: 39px;
+    height: 36px;
+    background-image: url(images/iconConnect.png) ;
+    background-repeat: no-repeat;
+    background-color: #ca5d6660;
+    outline: none;
+    border: none;
+    float: left;
+    margin-left: 20px;
+}
+.table1:hover tr:first-child {
+    background-color: #ca5d66bb;
+    height: 248px;
+}
+.table1:hover h1   {
+    visibility: visible;
+}
+.table1:hover p   {
+    visibility: visible;
+}
+.table1:hover button {
+    visibility: visible;
+}
+.table1 button:first-child:hover {
+    background-color: black;
+}
+.table1 button:last-child:hover {
+    background-color: black;
+}
+.table1:hover tr:last-child {
+    background-color: #ca5d66bb;
+    height: 248px;
+}
+/* ********************************2*************************************** */
+.table2 {
+    width: 380px;
+    height: 248px;
+    background-image: url(images/2.png);
+}
+.table2 h1 {
+    margin: 95px 140px 20px 9px;
+    color: white;
+    font-size: 22px;
+    visibility: hidden;
+}
+.table2 p {
+    color: white;
+    font-size: 15px;
+    visibility: hidden;
+}
+.table2 button {
+    margin: 20px 0px;
+    visibility: hidden;
+}
+.table2 button:first-child {
+    width: 39px;
+    height: 36px;
+    background-image: url(images/iconSearch.png) ;
+    background-repeat: no-repeat;
+    background-color: #ca5d6660;
+    outline: none;
+    border: none;
+    float: left;
+    margin-left: 37px;
+}
+.table2 button:last-child {
+    width: 39px;
+    height: 36px;
+    background-image: url(images/iconConnect.png) ;
+    background-repeat: no-repeat;
+    background-color: #ca5d6660;
+    outline: none;
+    border: none;
+    float: left;
+    margin-left: 20px;
+}
+.table2:hover tr:first-child {
+    background-color: #ca5d66bb;
+    height: 248px;
+}
+.table2:hover h1   {
+    visibility: visible;
+}
+.table2:hover p   {
+    visibility: visible;
+}
+.table2:hover button {
+    visibility: visible;
+}
+.table2 button:first-child:hover {
+    background-color: black;
+}
+.table2 button:last-child:hover {
+    background-color: black;
+}
+.table2:hover tr:last-child {
+    background-color: #ca5d66bb;
+    height: 248px;
+}
+/* ******************************** */
+.table3 {
+    width: 380px;
+    height: 248px;
+    background-image: url(images/3.png);
+}
+.table3 h1 {
+    margin: 95px 140px 20px 9px;
+    color: white;
+    font-size: 22px;
+    visibility: hidden;
+}
+.table3 p {
+    color: white;
+    font-size: 15px;
+    visibility: hidden;
+}
+.table3 button {
+    margin: 20px 0px;
+    visibility: hidden;
+}
+.table3 button:first-child {
+    width: 39px;
+    height: 36px;
+    background-image: url(images/iconSearch.png) ;
+    background-repeat: no-repeat;
+    background-color: #ca5d6660;
+    outline: none;
+    border: none;
+    float: left;
+    margin-left: 37px;
+}
+.table3 button:last-child {
+    width: 39px;
+    height: 36px;
+    background-image: url(images/iconConnect.png) ;
+    background-repeat: no-repeat;
+    background-color: #ca5d6660;
+    outline: none;
+    border: none;
+    float: left;
+    margin-left: 20px;
+}
+.table3:hover tr:first-child {
+    background-color: #ca5d66bb;
+    height: 248px;
+}
+.table3:hover h1   {
+    visibility: visible;
+}
+.table3:hover p   {
+    visibility: visible;
+}
+.table3:hover button {
+    visibility: visible;
+}
+.table3 button:first-child:hover {
+    background-color: black;
+}
+.table3 button:last-child:hover {
+    background-color: black;
+}
+.table3:hover tr:last-child {
+    background-color: #ca5d66bb;
+    height: 248px;
+}
+/* ************************************************ */
+.table4 {
+    width: 380px;
+    height: 248px;
+    background-image: url(images/4.png);
+}
+.table4 h1 {
+    margin: 95px 140px 20px 9px;
+    color: white;
+    font-size: 22px;
+    visibility: hidden;
+}
+.table4 p {
+    color: white;
+    font-size: 15px;
+    visibility: hidden;
+}
+.table4 button {
+    margin: 20px 0px;
+    visibility: hidden;
+}
+.table4 button:first-child {
+    width: 39px;
+    height: 36px;
+    background-image: url(images/iconSearch.png) ;
+    background-repeat: no-repeat;
+    background-color: #ca5d6660;
+    outline: none;
+    border: none;
+    float: left;
+    margin-left: 37px;
+}
+.table4 button:last-child {
+    width: 39px;
+    height: 36px;
+    background-image: url(images/iconConnect.png) ;
+    background-repeat: no-repeat;
+    background-color: #ca5d6660;
+    outline: none;
+    border: none;
+    float: left;
+    margin-left: 20px;
+}
+.table4:hover tr:first-child {
+    background-color: #ca5d66bb;
+    height: 248px;
+}
+.table4:hover h1   {
+    visibility: visible;
+}
+.table4:hover p   {
+    visibility: visible;
+}
+.table4:hover button {
+    visibility: visible;
+}
+.table4 button:first-child:hover {
+    background-color: black;
+}
+.table4 button:last-child:hover {
+    background-color: black;
+}
+.table4:hover tr:last-child {
+    background-color: #ca5d66bb;
+    height: 248px;
+}
+/* **************************************************** */
+.table5 {
+    width: 379px;
+    height: 248px;
+    background-image: url(images/5.png);
+}
+.table5 h1 {
+    margin: 95px 140px 20px 9px;
+    color: white;
+    font-size: 22px;
+    visibility: hidden;
+}
+.table5 p {
+    color: white;
+    font-size: 15px;
+    visibility: hidden;
+}
+.table5 button {
+    margin: 20px 0px;
+    visibility: hidden;
+}
+.table5 button:first-child {
+    width: 39px;
+    height: 36px;
+    background-image: url(images/iconSearch.png) ;
+    background-repeat: no-repeat;
+    background-color: #ca5d6660;
+    outline: none;
+    border: none;
+    float: left;
+    margin-left: 37px;
+}
+.table5 button:last-child {
+    width: 39px;
+    height: 36px;
+    background-image: url(images/iconConnect.png) ;
+    background-repeat: no-repeat;
+    background-color: #ca5d6660;
+    outline: none;
+    border: none;
+    float: left;
+    margin-left: 20px;
+}
+.table5:hover tr:first-child {
+    background-color: #ca5d66bb;
+    height: 248px;
+}
+.table5:hover h1   {
+    visibility: visible;
+}
+.table5:hover p   {
+    visibility: visible;
+}
+.table5:hover button {
+    visibility: visible;
+}
+.table5 button:first-child:hover {
+    background-color: black;
+}
+.table5 button:last-child:hover {
+    background-color: black;
+}
+.table5:hover tr:last-child {
+    background-color: #ca5d66bb;
+    height: 248px;
+}
+/* ************************************************* */
+.table6 {
+    width: 380px;
+    height: 248px;
+    background-image: url(images/6.png);
+}
+.table6 h1 {
+    margin: 95px 140px 20px 9px;
+    color: white;
+    font-size: 22px;
+    visibility: hidden;
+}
+.table6 p {
+    color: white;
+    font-size: 15px;
+    visibility: hidden;
+}
+.table6 button {
+    margin: 20px 0px;
+    visibility: hidden;
+}
+.table6 button:first-child {
+    width: 39px;
+    height: 36px;
+    background-image: url(images/iconSearch.png) ;
+    background-repeat: no-repeat;
+    background-color: #ca5d6660;
+    outline: none;
+    border: none;
+    float: left;
+    margin-left: 37px;
+}
+.table6 button:last-child {
+    width: 39px;
+    height: 36px;
+    background-image: url(images/iconConnect.png) ;
+    background-repeat: no-repeat;
+    background-color: #ca5d6660;
+    outline: none;
+    border: none;
+    float: left;
+    margin-left: 20px;
+}
+.table6:hover tr:first-child {
+    background-color: #ca5d66bb;
+    height: 248px;
+}
+.table6:hover h1   {
+    visibility: visible;
+}
+.table6:hover p   {
+    visibility: visible;
+}
+.table6:hover button {
+    visibility: visible;
+}
+.table6 button:first-child:hover {
+    background-color: black;
+}
+.table6 button:last-child:hover {
+    background-color: black;
+}
+.table6:hover tr:last-child {
+    background-color: #ca5d66bb;
+    height: 248px;
+}
+/* ************************************************************** */
+.table7 {
+    width: 380px;
+    height: 248px;
+    background-image: url(images/7.png);
+}
+.table7 h1 {
+    margin: 95px 140px 20px 9px;
+    color: white;
+    font-size: 22px;
+    visibility: hidden;
+}
+.table7 p {
+    color: white;
+    font-size: 15px;
+    visibility: hidden;
+}
+.table7 button {
+    margin: 20px 0px;
+    visibility: hidden;
+}
+.table7 button:first-child {
+    width: 39px;
+    height: 36px;
+    background-image: url(images/iconSearch.png) ;
+    background-repeat: no-repeat;
+    background-color: #ca5d6660;
+    outline: none;
+    border: none;
+    float: left;
+    margin-left: 37px;
+}
+.table7 button:last-child {
+    width: 39px;
+    height: 36px;
+    background-image: url(images/iconConnect.png) ;
+    background-repeat: no-repeat;
+    background-color: #ca5d6660;
+    outline: none;
+    border: none;
+    float: left;
+    margin-left: 20px;
+}
+.table7:hover tr:first-child {
+    background-color: #ca5d66bb;
+    height: 248px;
+}
+.table7:hover h1   {
+    visibility: visible;
+}
+.table7:hover p   {
+    visibility: visible;
+}
+.table7:hover button {
+    visibility: visible;
+}
+.table7 button:first-child:hover {
+    background-color: black;
+}
+.table7 button:last-child:hover {
+    background-color: black;
+}
+.table7:hover tr:last-child {
+    background-color: #ca5d66bb;
+    height: 248px;
+}
+/* ********************************************* */
+.table8 {
+    width: 380px;
+    height: 248px;
+    background-image: url(images/8.png);
+}
+.table8 h1 {
+    margin: 95px 140px 20px 9px;
+    color: white;
+    font-size: 22px;
+    visibility: hidden;
+}
+.table8 p {
+    color: white;
+    font-size: 15px;
+    visibility: hidden;
+}
+.table8 button {
+    margin: 20px 0px;
+    visibility: hidden;
+}
+.table8 button:first-child {
+    width: 39px;
+    height: 36px;
+    background-image: url(images/iconSearch.png) ;
+    background-repeat: no-repeat;
+    background-color: #ca5d6660;
+    outline: none;
+    border: none;
+    float: left;
+    margin-left: 37px;
+}
+.table8 button:last-child {
+    width: 39px;
+    height: 36px;
+    background-image: url(images/iconConnect.png) ;
+    background-repeat: no-repeat;
+    background-color: #ca5d6660;
+    outline: none;
+    border: none;
+    float: left;
+    margin-left: 20px;
+}
+.table8:hover tr:first-child {
+    background-color: #ca5d66bb;
+    height: 248px;
+}
+.table8:hover h1   {
+    visibility: visible;
+}
+.table8:hover p   {
+    visibility: visible;
+}
+.table8:hover button {
+    visibility: visible;
+}
+.table8 button:first-child:hover {
+    background-color: black;
+}
+.table8 button:last-child:hover {
+    background-color: black;
+}
+.table8:hover tr:last-child {
+    background-color: #ca5d66bb;
+    height: 248px;
+}
+/* ********************************************* */
+.recent-blog h1 {
+    color: #fac81b;
+    font-size: 35px;
+    text-align: center;
+    margin: 60px;
+}
+.recent-blog p {
+    font-size: 14px;
+    color: #e66768;
+    text-align: center;
+}
+
+.recent-blog h2 {
+    font-size: 22px;
+    color: #646464;
+    margin: 30px auto 60px;
+    text-align: center;
+}
+.recent-blog img {
+    width: 100%;
+}
+
+.footer {
+    background-color: #3d3d3d;
+}
+.menu1 {
+    display: flex;
+   justify-content: center;
+}
+.menu1 li a {
+    margin: 19px;
+    padding: 4px;
+    font-size: 15px;
+    color: #989898;
+}
+
+.foo {
+    color: #989898;
+    background-color: #3d3d3d;
+    padding: 20px;
+    border-top: 1px solid #989898;
+    text-align: center;
+    
+}
+
+
+
+
+
+
+
+
