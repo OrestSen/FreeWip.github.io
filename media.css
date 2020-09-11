@@ -70,7 +70,7 @@
     }
 }
 @media(max-width:605px) {
-      .nav-mobile-menu {
+      .nav-mobile-menu:before {
         content: "\ea78";
         font-family: 'icomoon';
         color: #d6e969;
