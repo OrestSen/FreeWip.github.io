@@ -78,7 +78,8 @@
         content: "\ea78";
         font-family: 'icomoon';
         color: #d6e969;
-        position: relative;   
+        position: relative;
+        font-size: 17px;
     }
     .nav-mobile-menu span {
         height: 1px;
