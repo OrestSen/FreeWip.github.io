@@ -70,16 +70,17 @@
     }
 }
 @media(max-width:605px) {
-    .col-sm-5 {
-        flex: 0 0 41.6667%;
-        max-width: 41.6667%;
-    }
-    .nav-mobile-menu {
+      .nav-mobile-menu {
         content: "\ea78";
         font-family: 'icomoon';
         color: #d6e969;
         position: relative;   
     }
+    .col-sm-5 {
+        flex: 0 0 41.6667%;
+        max-width: 41.6667%;
+    }
+  
     .nav-mobile-menu span {
         height: 1px;
         background-color: rgb(41, 27, 27);
