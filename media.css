@@ -77,9 +77,6 @@
         position: relative;
         font-size: 17px;
     }
-    .icon-paragraph-center:before {
-        content: "\ea78";
-    }
     .col-sm-5 {
         flex: 0 0 41.6667%;
         max-width: 41.6667%;
