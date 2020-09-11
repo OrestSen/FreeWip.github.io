@@ -74,7 +74,7 @@
         flex: 0 0 41.6667%;
         max-width: 41.6667%;
     }
-    .nav-mobile-menu:before {
+    .nav-mobile-menu {
         content: "\ea78";
         font-family: 'icomoon';
         color: #d6e969;
