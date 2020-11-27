@@ -10,3 +10,7 @@ mobileMenu.addEventListener("click",function() {
         mainMenu.classList.remove("active-menu")
     }
 })
+
+
+
+$('.menu').onePageNav()

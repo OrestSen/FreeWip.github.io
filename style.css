@@ -101,11 +101,16 @@ p {
     color: #e9696a;
 }
 
-header {
-    height: 680px;
-    width: 100%;
+.main {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100vh;
     background: url(images/Banner.png) no-repeat;
     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .header {
@@ -159,28 +164,31 @@ header {
 main {
     background-color: #e66768;
 }
-
-.main h1 {
+.checkout {
+    background-color: #e66768;
+    min-height: 800px;
+}
+.checkout h1 {
     text-align: center;
     color: #fac81b;
     font-size: 35px;
     margin: 50px 0px;
 }
-.main h2 {
+.checkout h2 {
     text-align: center;
     color: white;
     font-size: 22px;
     margin: 20px 0px;
 }
 
-.main p {
+.checkout p {
     text-align: center;
     color: white;
     font-size: 14px;
     margin: 20px 0px;
 }
 
-.main button {
+.checkout button {
     margin: 20px 0px ;
     border: 1px solid #fac81b;
     border-left: 3px solid #fac81b;
@@ -190,7 +198,7 @@ main {
     font-weight: 600;
     color: white;
 }
-.main button:hover {
+.checkout button:hover {
     color: #fac81b;
     text-shadow: inset 0 0 6px;
     border:1px solid black;
